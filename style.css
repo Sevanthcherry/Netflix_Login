@@ -69,7 +69,10 @@ form .form-control{
     border-radius: 4px;
     padding: 0 20px;
 }
-
+.form-control input:is(:focus, :valid) {
+    padding: 16px 20px 0;
+    background: #444;
+}
 .form-control label {
     position: absolute;
     left: 20px;
@@ -86,5 +89,68 @@ form .form-control{
     transform: translateY(-130%);
 
 }
+
+form button {
+    width: 100%;
+    padding: 16px 0;
+    background-color: red;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 4px;
+    margin: 25px 0 10px;
+    transition: 0.1s ease;
+}
+
+form button:hover {
+    background-color:#c40812;
+}
+
+form .form-help {
+    display: flex;
+    justify-content: space-between;
+}
+
+form .remember-me {
+    /* display: flex; */
+}
+
+form .remember-me input {
+    margin-top: 5px;
+    accent-color: #333;
+}
+
+form .form-help :where(label, a){
+    font-size: 0.9rem;
+}
+
+.form-wrapper :where(label, p, small,a) {
+    color: #b3b3b3;
+}
+
+.form-wrapper p a {
+    color: #fff;
+}
+
+.form-wrapper small {
+    display: block;
+    margin-top: 15px;
+}
+
+.form-wrapper small a {
+    color: #0071eb;
+}
+
+.form-wrapper a {
+    text-decoration: none;
+}
+
+.form-wrapper a:hover {
+    text-decoration: underline;
+}
+
 
 
